@@ -76,3 +76,6 @@ stats = net.train(X_train, y_train, X_val, y_val,
 # Predict on the validation set
 val_acc = (net.predict(X_val) == y_val).mean()
 print('Validation accuracy: ', val_acc)
+
+test_acc = (net.predict(X_test) == y_test).mean()
+print('Test accuracy: ', test_acc)
