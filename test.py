@@ -1,5 +1,4 @@
 from neural_network import nn
-from solution import TwoLayerNet
 import matplotlib.pyplot as plt
 import numpy as np
 from data_utils import load_CIFAR10
@@ -69,7 +68,7 @@ net = nn(input_size, hidden_size, num_classes)
 
 # Train the network
 stats = net.train(X_train, y_train, X_val, y_val,
-            num_iters=1000, batch_size=200,
+            num_iters=10000, batch_size=100,
             learning_rate=1e-4, learning_rate_decay=0.95,
             reg=0.25, verbose=True)
 
