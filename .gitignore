@@ -1,0 +1,7 @@
+.vscode
+datasets
+solution.py
+prova.py
+venv
+__pycache__
+gradient_check.py
